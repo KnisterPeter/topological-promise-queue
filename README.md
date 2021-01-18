@@ -30,3 +30,30 @@ Given the following graph:
 This means, order of execution would be `B`, `C` and `D` in parallel, then `A`.
 
 The amount of concurrency could be defined for limiting resource usage.
+
+---
+
+## Usage
+
+```js
+import { run } from "topological-promise-queue";
+
+await run({
+  concurrency: 10,
+  edges: [
+    // a depends on b
+    ["a", "b"],
+    // a depends on c
+    ["a", "c"],
+    // b depends on c
+    ["b", "c"],
+  ],
+  async runner(node) {
+    console.log(node);
+    // this will output:
+    // c
+    // b
+    // a
+  },
+});
+```
