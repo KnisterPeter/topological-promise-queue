@@ -4,7 +4,12 @@
   "description": "Run promises in order of a directed acyclic graph",
   "source": "index.js",
   "main": "./dist/tpq.js",
-  "exports": "./dist/tpq.modern.js",
+  "exports": {
+    ".": {
+      "import": "./dist/tpq.modern.js",
+      "require": "./dist/tpq.js"
+    }
+  },
   "module": "./dist/tpq.module.js",
   "unpkg": "./dist/tpq.umd.js",
   "types": "./dist/index.d.ts",
