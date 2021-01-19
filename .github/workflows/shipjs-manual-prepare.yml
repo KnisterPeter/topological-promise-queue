@@ -26,7 +26,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
       - run: npm run release -- --yes --no-browse
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           SLACK_INCOMING_HOOK: ${{ secrets.SLACK_INCOMING_HOOK }}
 
   create_done_comment:
@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/github-script@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GH_TOKEN }}
           script: |
             github.issues.createComment({
               issue_number: context.issue.number,
@@ -52,7 +52,7 @@ jobs:
     steps:
       - uses: actions/github-script@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GH_TOKEN }}
           script: |
             github.issues.createComment({
               issue_number: context.issue.number,
