@@ -8,6 +8,12 @@
   "module": "./dist/tpq.module.js",
   "unpkg": "./dist/tpq.umd.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist/",
+    "index.js"
+  ],
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
