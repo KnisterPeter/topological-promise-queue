@@ -41,7 +41,7 @@
     "@babel/core": "7.14.6",
     "@babel/preset-env": "7.14.7",
     "@babel/preset-typescript": "7.14.5",
-    "@types/jest": "26.0.23",
+    "@types/jest": "26.0.24",
     "babel-jest": "27.0.6",
     "jest": "27.0.6",
     "microbundle": "0.13.3",
