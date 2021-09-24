@@ -34,7 +34,7 @@ jobs:
     needs: manual_prepare
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@v4
+      - uses: actions/github-script@v5
         with:
           github-token: ${{ secrets.GH_TOKEN }}
           script: |
@@ -50,7 +50,7 @@ jobs:
     needs: manual_prepare
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@v4
+      - uses: actions/github-script@v5
         with:
           github-token: ${{ secrets.GH_TOKEN }}
           script: |
