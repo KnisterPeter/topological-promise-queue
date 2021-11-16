@@ -39,7 +39,7 @@
   "homepage": "https://github.com/KnisterPeter/topological-promise-queue#readme",
   "devDependencies": {
     "@babel/core": "7.16.0",
-    "@babel/preset-env": "7.16.0",
+    "@babel/preset-env": "7.16.4",
     "@babel/preset-typescript": "7.16.0",
     "@types/jest": "27.0.2",
     "babel-jest": "27.3.1",
