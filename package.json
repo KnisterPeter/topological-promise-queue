@@ -45,7 +45,7 @@
     "babel-jest": "27.4.2",
     "jest": "27.4.3",
     "microbundle": "0.14.2",
-    "prettier": "2.5.0",
+    "prettier": "2.5.1",
     "shipjs": "0.24.0",
     "typescript": "4.5.2"
   },
