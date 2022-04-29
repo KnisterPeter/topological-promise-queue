@@ -38,8 +38,8 @@
   },
   "homepage": "https://github.com/KnisterPeter/topological-promise-queue#readme",
   "devDependencies": {
-    "@babel/core": "7.17.9",
-    "@babel/preset-env": "7.16.11",
+    "@babel/core": "7.17.10",
+    "@babel/preset-env": "7.17.10",
     "@babel/preset-typescript": "7.16.7",
     "@types/jest": "27.5.0",
     "babel-jest": "27.5.1",
